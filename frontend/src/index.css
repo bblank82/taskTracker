@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #1a1a2e;
+    color: #e2e2f0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }
+
+  input, textarea, select {
+    background-color: #2d2d42;
+    color: #e2e2f0;
+    border: 1px solid #3a3a52;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.625rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #666680;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: 2px solid #6366f1;
+    border-color: #6366f1;
+  }
+}
+
+@layer components {
+  .task-row-overdue {
+    background-color: #3d1515;
+  }
+
+  .task-row-upcoming {
+    background-color: #2e2510;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-500 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-elevated border border-border text-text-primary px-4 py-2 rounded-md text-sm font-medium hover:bg-border transition-colors;
+  }
+
+  .btn-ghost {
+    @apply text-text-secondary px-3 py-1.5 rounded text-sm hover:text-text-primary hover:bg-elevated transition-colors;
+  }
+
+  .btn-danger {
+    @apply text-red-400 text-sm hover:text-red-300 transition-colors;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-lg;
+  }
+}

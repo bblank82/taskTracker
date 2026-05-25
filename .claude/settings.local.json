@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(python3 -m pip install -r requirements.txt -q)",
+      "Bash(~/.nvm/versions/node/v22.22.2/bin/npm install *)",
+      "Bash(~/.nvm/versions/node/v22.22.2/bin/node --version)",
+      "Bash(~/.nvm/versions/node/v22.22.2/bin/npm --version)",
+      "Bash(python3 *)",
+      "Bash(PATH=__TRACKED_VAR__/Library/Python/3.9/bin:__TRACKED_VAR__ uvicorn main:app --reload --port 8000)",
+      "Bash(curl -s http://localhost:8000/health)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s http://localhost:8000/api/users)",
+      "Bash(curl -v http://localhost:8000/health)",
+      "Bash(curl *)",
+      "Bash(pkill -f \"uvicorn main\")",
+      "Bash(uvicorn main:app --host 127.0.0.1 --port 8000 --reload)",
+      "Bash(pip3 show *)",
+      "Bash(npx tsc *)",
+      "Bash(/Users/bblank/.nvm/versions/node/v22.16.0/bin/npx tsc *)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(~/.nvm/versions/node/v22.22.2/bin/node node_modules/.bin/tsc --noEmit)"
+    ]
+  }
+}
